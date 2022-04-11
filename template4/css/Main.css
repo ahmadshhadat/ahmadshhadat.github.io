@@ -1,0 +1,225 @@
+/* Start Variables */
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+/* main */
+.container {
+    padding: 50px 0;
+    color: #fdf5e5;
+    margin-bottom: 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows:  repeat(3,auto) 150px; 
+    gap: 20px;
+
+}
+
+.container  h3{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.container p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: #fdf5e5;
+    text-transform: uppercase;
+}
+
+.container .img span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    background-color: #495052;
+    padding: 5px;
+}
+
+.container div  .img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.container div  .img img {
+    width: 100%;
+}
+
+.container div .info {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* END main */
+
+
+/* meal */
+
+.container .meal{
+    grid-column: 1;
+    grid-row: span 2;
+    background-color: #edbf47;
+}
+
+.container .meal .info button {
+    background-color: #e1b543;
+}
+
+.container .meal .info button:hover {
+    background-color: #af8c33;
+}
+
+/* End meal */
+
+
+
+/* john */
+
+.container .john {
+    grid-column: 2;
+    grid-row: 1 ;
+    background-color: #ec774b;
+    padding: 40px;
+    text-align: center;
+}
+
+.container .john p {
+    font-size: 25px;
+    margin-top: 0%;
+}
+
+.container .john .icon {
+    width: 100%;
+    font-size: 20px;
+}
+
+.container .john .icon i {
+    color: #dc724b;
+    margin-left: 10px;
+    margin: 0%;
+}
+
+/* End john */
+
+/* party */
+
+.container .party {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    background-color: #74cee4;
+}
+.container .party  img{
+    display: inline-block;
+    height: 400px;
+}
+.container .party .info button {
+    background-color: #6ec3d8;
+}
+
+.container .party .info button:hover {
+    background-color: #579fb1;
+}
+
+/* end party */
+
+/* cookink */
+
+.container .cookink{
+    grid-column: 1;
+    grid-row: span 2;
+    background-color: #6fc191;
+}
+/* END cookink */
+
+
+/* music */
+.container .music {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    background-color: #e16c6c;
+
+}
+.container .music img {
+    display: block;
+    height: 300px;
+}
+.container .music .info button {
+    background-color: #d66666;
+}
+
+.container .music .info button:hover {
+    background-color: #c45e5e;
+}
+/* end music */
+
+
+
+/* events */
+.events {
+    grid-column: 3;
+    grid-row:  4;
+    background-color: #c389ce;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events  p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+/* end events */

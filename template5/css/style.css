@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.parent {
+    background-color: #eee;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4 ,  1fr);
+    grid-template-rows: repeat( 4, auto);
+    gap: 10px;
+    
+}
+
+.parent div {
+    position: relative;
+    padding: 20px;
+    line-height: 1.6;
+    border-bottom: 4px solid red;
+
+}
+
+h5 {
+    color:#AAABAC;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.parent  div p {
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.bold {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    bottom: 0.625em;
+    right: 0.625em;
+    padding:0.4375em 0.15625em; 
+    background-color: #b3b3b3;
+    border-radius: 0 0 100% 100%;
+    transform: rotate(10deg);
+    box-shadow: -0.625em 0 0 0#b3b3b3;
+}
+
+.Ahmad {
+    grid-column: span 2;
+    background-color: white;
+}
+
+.Osama {
+    background-color: white;
+}
+
+.Shady {
+    grid-row: span 3;
+    background-color: black;
+    color: white;
+}
+
+.MHD {
+    grid-row: span 2;
+}
+
+.Mahmoud {
+    grid-column: span 2;
+    background-color: black;
+    color: white;
+}
+
+.Ezz {
+    grid-column: span 2;
+    background-color: white;
+
+}
+
+.Sayed {
+    background-color: white;
+
+}
+
+.Ibrahim {
+    background-color: black;
+    color: white;
+
+}
+
+.Gamal {
+    background-color: white;
+}
+
+.Eman {
+    background-color: white;
+}
